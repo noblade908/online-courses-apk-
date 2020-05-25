@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".addMCQuestion">
+
+    <Button
+        android:id="@+id/addButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="296dp"
+        android:layout_marginLeft="296dp"
+        android:layout_marginTop="29dp"
+        android:layout_marginEnd="27dp"
+        android:layout_marginRight="27dp"
+        android:text="Add"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gradeptsEditText" />
+
+    <TextView
+        android:id="@+id/gradeptsTextView2"
+        android:layout_width="164dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="21dp"
+        android:text="Grade weight:"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/correctanswerTextView" />
+
+    <EditText
+        android:id="@+id/gradeptsEditText"
+        android:layout_width="140dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginLeft="64dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="27dp"
+        android:layout_marginRight="27dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/gradeptsTextView2"
+        app:layout_constraintTop_toBottomOf="@+id/correctanswerEditText" />
+
+    <EditText
+        android:id="@+id/fourthchoiceEditText"
+        android:layout_width="244dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="23dp"
+        android:layout_marginLeft="23dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginEnd="27dp"
+        android:layout_marginRight="27dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Enter Fourth Choice"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/firstchoiceTextView"
+        app:layout_constraintTop_toBottomOf="@+id/thirdchoiceEditText" />
+
+    <TextView
+        android:id="@+id/firstchoiceTextView4"
+        android:layout_width="98dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="23dp"
+        android:text="Choice 4:"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/thirdchoiceTextView" />
+
+    <EditText
+        android:id="@+id/thirdchoiceEditText"
+        android:layout_width="244dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="23dp"
+        android:layout_marginLeft="23dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="27dp"
+        android:layout_marginRight="27dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Enter Third Choice"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/firstchoiceTextView"
+        app:layout_constraintTop_toBottomOf="@+id/secondchoiceEditText" />
+
+    <TextView
+        android:id="@+id/thirdchoiceTextView"
+        android:layout_width="98dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="27dp"
+        android:text="Choice 3:"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/secondchoiceTextView" />
+
+    <EditText
+        android:id="@+id/secondchoiceEditText"
+        android:layout_width="246dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="23dp"
+        android:layout_marginLeft="23dp"
+        android:layout_marginTop="22dp"
+        android:layout_marginEnd="27dp"
+        android:layout_marginRight="27dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Enter Second Choice"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/firstchoiceTextView"
+        app:layout_constraintTop_toBottomOf="@+id/firstchoiceEditText" />
+
+    <TextView
+        android:id="@+id/secondchoiceTextView"
+        android:layout_width="98dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="25dp"
+        android:text="Choice 2:"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/firstchoiceTextView" />
+
+    <TextView
+        android:id="@+id/statementTextView"
+        android:layout_width="369dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="26dp"
+        android:layout_marginRight="26dp"
+        android:text="TextView"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Enter the statement of the question:" />
+
+    <EditText
+        android:id="@+id/statementEditText"
+        android:layout_width="370dp"
+        android:layout_height="91dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="26dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginRight="25dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Enter here"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/statementTextView" />
+
+    <EditText
+        android:id="@+id/firstchoiceEditText"
+        android:layout_width="248dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="23dp"
+        android:layout_marginLeft="23dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="27dp"
+        android:layout_marginRight="27dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Enter First Choice"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/firstchoiceTextView"
+        app:layout_constraintTop_toBottomOf="@+id/statementEditText" />
+
+    <TextView
+        android:id="@+id/firstchoiceTextView"
+        android:layout_width="98dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="36dp"
+        android:text="Choice 1:"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/statementEditText" />
+
+    <TextView
+        android:id="@+id/correctanswerTextView"
+        android:layout_width="204dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="26dp"
+        android:text="Correct Answer Number:"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fourthchoiceEditText" />
+
+    <EditText
+        android:id="@+id/correctanswerEditText"
+        android:layout_width="147dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginLeft="17dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="27dp"
+        android:layout_marginRight="27dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/correctanswerTextView"
+        app:layout_constraintTop_toBottomOf="@+id/fourthchoiceEditText" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

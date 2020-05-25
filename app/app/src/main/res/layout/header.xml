@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/c3"
+    android:layout_height="220dp">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="10dp"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profilePic"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:elevation="6dp"
+        android:src="@drawable/doggy"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        app:civ_border_color="@color/c3"
+        app:civ_border_width="4dp" />
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:text="sam"
+        android:id="@+id/NameOfUser"
+        android:layout_gravity="center"
+        android:textSize="14dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:textColor="#fff"
+        android:textStyle="bold"/>
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:text="doggy"
+            android:id="@+id/sideExperiencepoints"
+            android:layout_gravity="center"
+            android:textSize="14dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:textColor="#fff"
+            android:textStyle="bold"/>
+<!--    android:src="@drawable/ic_launcher_background"-->
+<!--    android:layout_gravity="center"-->
+</LinearLayout>
+
+</LinearLayout>

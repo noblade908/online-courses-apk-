@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".homepage"
+    tools:openDrawer="end"
+    android:id="@+id/drawer"
+    android:background="@color/c3"
+  >
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+
+
+        <androidx.appcompat.widget.SearchView
+            android:id="@+id/coursesSearch"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:background="@color/c3"
+            android:layout_marginStart="190dp"
+            android:layout_marginLeft="190dp"
+            android:layout_marginTop="50dp"
+            android:elevation="6dp" />
+
+        <Button
+            android:id="@+id/Mycourses"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="190dp"
+            android:layout_marginLeft="190dp"
+            android:layout_marginTop="100dp"
+            android:layout_alignParentStart="true"
+            android:background="@color/c3"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:text="My Courses"
+            android:onClick="myCourses"/>
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="0dp"
+            android:layout_marginRight="0dp"
+            android:layout_marginBottom="0dp"
+            android:background="@color/c1" />
+
+
+    </RelativeLayout>
+
+
+    <com.google.android.material.navigation.NavigationView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/navigationView"
+        app:menu="@menu/menu_item"
+
+        app:headerLayout="@layout/header"
+        android:background="@color/c3"
+        android:layout_gravity="start"
+        app:itemTextColor="#fff"/>
+
+
+
+
+
+
+</androidx.drawerlayout.widget.DrawerLayout>
+

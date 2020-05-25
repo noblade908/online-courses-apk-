@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".createACourse">
+
+    <EditText
+        android:id="@+id/DescriptionPT2"
+        android:layout_width="325dp"
+        android:layout_height="43dp"
+        android:ems="10"
+        android:hint="Description"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/namePT"
+        app:layout_constraintVertical_bias="0.059" />
+
+    <EditText
+        android:id="@+id/namePT"
+        android:layout_width="325dp"
+        android:layout_height="43dp"
+        android:ems="10"
+        android:hint="Name"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.088" />
+
+    <RadioGroup
+        android:id="@+id/PPRG"
+        android:layout_width="320dp"
+        android:layout_height="64dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/DescriptionPT2"
+        app:layout_constraintVertical_bias="0.086">
+
+        <RadioButton
+            android:id="@+id/publicRB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="public" />
+
+        <RadioButton
+            android:id="@+id/privateRB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="private" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/ModulesTV"
+        android:layout_width="106dp"
+        android:layout_height="37dp"
+        android:text="Modules"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.148"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/PPRG"
+        app:layout_constraintVertical_bias="0.149" />
+
+    <Button
+        android:id="@+id/addBT"
+        android:layout_width="82dp"
+        android:layout_height="37dp"
+        android:text="add"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.466"
+        app:layout_constraintStart_toEndOf="@+id/ModulesTV"
+        app:layout_constraintTop_toBottomOf="@+id/PPRG"
+        app:layout_constraintVertical_bias="0.149" />
+
+    <Button
+        android:id="@+id/deleteBT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="248dp"
+        android:text="Delete"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.111"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ModulesTV"
+        app:layout_constraintVertical_bias="0.06" />
+
+    <Button
+        android:id="@+id/doneBT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="44dp"
+        android:text="Done"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.418"
+        app:layout_constraintStart_toEndOf="@+id/projectBT"
+        app:layout_constraintTop_toBottomOf="@+id/ModulesTV"
+        app:layout_constraintVertical_bias="0.988" />
+
+    <Button
+        android:id="@+id/projectBT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="248dp"
+        android:text="Project"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.185"
+        app:layout_constraintStart_toEndOf="@+id/deleteBT"
+        app:layout_constraintTop_toBottomOf="@+id/addBT"
+        app:layout_constraintVertical_bias="0.06" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
